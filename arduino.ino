@@ -4,7 +4,7 @@ void setup() {
 
   Serial.begin(9600);
 
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(12, OUTPUT);
 
 }
 
@@ -18,13 +18,13 @@ void loop() {
 
     if (inByte == '1') {
 
-      digitalWrite(13, HIGH);
+      digitalWrite(12, HIGH);
 
     }
 
     if (inByte == '0') {
 
-      digitalWrite(13, LOW);
+      digitalWrite(12, LOW);
 
     }
 
