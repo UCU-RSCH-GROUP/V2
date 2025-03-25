@@ -25,7 +25,7 @@ app.add_middleware(
 # Serial Object
 # Arduino Communication
 try:
-    arduino = serial.Serial(port='/dev/cu.usbmodem146201', baudrate=115200, timeout=.1)  # Adjust port
+    arduino = serial.Serial(port='/dev/ttyUSB0', baudrate=9600, timeout=.1)  # Adjust port
 except serial.SerialException as e:
     print(f"Error opening serial port: {e}")
     arduino = None  # Handle the case where the port is not available
